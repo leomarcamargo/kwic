@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<featureModel chosenLayoutAlgorithm="1">
+	    <struct>
+	        <and abstract="true" mandatory="true" name="KWIC">
+	            <feature mandatory="true" name="Base"/>
+	            <alt mandatory="true" name="Input">
+	                <feature name="DBLP"/>
+	                <feature name="File In"/>
+	            </alt>
+	            <alt mandatory="true" name="Output">
+	                <feature name="Screen"/>
+	                <feature name="File Out"/>
+	            </alt>
+	        </and>
+	    </struct>
+	    <calculations Auto="true" Constraints="true" Features="true" Redundant="true"/>
+	    <comments/>
+	    <featureOrder userDefined="false"/>
+	</featureModel>

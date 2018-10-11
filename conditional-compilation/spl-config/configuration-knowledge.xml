@@ -1,0 +1,69 @@
+<configurationModel>
+  <configuration>
+    <expression>Base</expression>
+    <transformation>
+      <name>selectAllComponents</name>
+      <args>-</args>
+    </transformation>
+    <transformation>
+      <name>preprocessFiles</name>
+      <args>Main</args>
+    </transformation>
+  </configuration>
+  <configuration>
+    <expression>DBLP</expression>
+    <transformation>
+      <name>createBuildEntries</name>
+      <args>dblp</args>
+    </transformation>
+  </configuration>
+  <configuration>
+    <expression>Not(DBLP)</expression>
+    <transformation>
+      <name>removeComponents</name>
+      <args>DBLPStorageManager</args>
+    </transformation>
+  </configuration>
+  <configuration>
+    <expression>File Out</expression>
+    <transformation>
+      <name>createBuildEntries</name>
+      <args>fileOut</args>
+    </transformation>
+  </configuration>
+  <configuration>
+    <expression>Not(File Out)</expression>
+    <transformation>
+      <name>removeComponents</name>
+      <args>SaveFile</args>
+    </transformation>
+  </configuration>
+  <configuration>
+    <expression>Screen</expression>
+    <transformation>
+      <name>createBuildEntries</name>
+      <args>screen</args>
+    </transformation>
+  </configuration>
+  <configuration>
+    <expression>Not(Screen)</expression>
+    <transformation>
+      <name>removeComponents</name>
+      <args>SaveScreen</args>
+    </transformation>
+  </configuration>
+  <configuration>
+    <expression>File In</expression>
+    <transformation>
+      <name>createBuildEntries</name>
+      <args>fileIn</args>
+    </transformation>
+  </configuration>
+  <configuration>
+    <expression>Not(File In)</expression>
+    <transformation>
+      <name>removeComponents</name>
+      <args>FileBasedStorageManager</args>
+    </transformation>
+  </configuration>
+</configurationModel>

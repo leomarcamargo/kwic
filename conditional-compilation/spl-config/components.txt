@@ -1,0 +1,5 @@
+Main => src/kwic/Main.java;
+DBLPStorageManager => src/kwic/DBLPStorageManager.java;
+FileBasedStorageManager => src/kwic/FileBasedStorageManager.java;
+SaveFile => src/kwic/SaveFile.java;
+SaveScreen => src/kwic/SaveScreen.java;
